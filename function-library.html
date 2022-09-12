@@ -38,6 +38,13 @@
         }
        return num;
     }
+
+    input.addEventListener('change', () => {
+        const num = parseFloat(input.value);
+        if (isNaN(num)) {
+            para.textContent = 'You need to enter a number!';
+        }
+    })
   </script>
 </body>
 </html>
