@@ -33,7 +33,7 @@
     </style>
   </head>
   <body>
-    <button>Display message box</button>
+    <button id="openBtn">Display message box</button>
 
     <script>
       function displayMessage() {
@@ -52,7 +52,9 @@
         closeBtn.textContent = 'x';
         panel.appendChild(closeBtn);
 
-closeBtn.addEventListener('click', () => panel.parentNode.removeChild(panel));
+        openBtn.addEventListener('click', () => displayMessage);
+
+        closeBtn.addEventListener('click', () => panel.parentNode.removeChild(panel));
 
       }
     </script>
