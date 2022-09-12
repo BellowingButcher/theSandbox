@@ -47,9 +47,10 @@
         const btn = document.querySelector('button');
 
         btn.addEventListener('click', ()=> 
-        displayMessage('Woo, this is a different message!'));
 
-      function displayMessage() {
+        displayMessage('Your inbox is almost full - delete some emalis', 'warning'));
+
+      function displayMessage(msgText, msgType) {
 
         const body = document.body;
 
@@ -76,7 +77,7 @@
 
             msg.style.backgroundImage = 'url(icons/chat.png)';
             panel.style.backgroundColor = 'aqua';
-            
+
 } else {
             msg.style.paddingLeft = '20px';
 }
