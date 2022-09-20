@@ -12,10 +12,13 @@
 
 -burners
     -frontRight
-        -
+        -on/off
     -frontLeft
+        -on/off
     -backRight
+        -on/off
     -backLeft
+        -on/off
 
 -burner Dials
     -frontRight
